@@ -12,7 +12,7 @@ pipeline {
     stages {
         stage('git checkout') {
             steps {
-                git branch: 'dev', url: 'https://github.com/Modiashok247/javacode.git'
+                git branch: 'master', url: 'https://github.com/Modiashok247/javacode.git'
             }
         }
         stage('build') {
