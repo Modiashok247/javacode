@@ -22,7 +22,7 @@ pipeline {
         }
         stage('sonar report') {
             steps {
-                sh "mvn sonar:sonar"
+                sh "mvn sonar:sonar -Dsonar.login=sqp_96f1029ff43186b4c33aac508396a6724e74a1a4"
             }
         }
         stage('nexus artifactory') {
