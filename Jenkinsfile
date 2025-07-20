@@ -36,7 +36,7 @@ pipeline {
          sh """
             curl -u ashok:password \
             --upload-file /var/lib/jenkins/workspace/Jio-declarative-pl/target/maven-web-application.war \
-            "http://13.50.5.107:8080/manager/text/deploy?path=/maven-web-application&update=true"
+            "http://16.170.140.128:8080/manager/text/deploy?path=/maven-web-application&update=true"
         """   
         }
     }
